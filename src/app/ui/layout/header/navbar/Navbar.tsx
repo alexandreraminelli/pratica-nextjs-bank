@@ -1,4 +1,5 @@
 import mainNavbar from "@/data/constants/navigation/mainNavbar" // lista de links
+import clsx from "clsx"
 import Link from "next/link"
 import BurguerButton from "./BurguerButton" // ícone hambúrguer
 
@@ -10,7 +11,7 @@ export default function Navbar() {
   return (
     <nav>
       {/* Links */}
-      <NavbarLinks />
+      <NavbarLinks className="max-md:hidden" />
 
       {/* Botão para mobile */}
       <BurguerButton className="md:hidden" />
@@ -19,11 +20,12 @@ export default function Navbar() {
 }
 
 /** Grupo de links do navbar. */
-function NavbarLinks() {
+function NavbarLinks({ className }: { className?: string }) {
   return (
-    <ul>
+    <ul className={`flex flex-row gap-1.5 ${className}`}>
+      {/* Iteração */}
       {mainNavbar.map((link, index) => (
-        <NavLink key={index} {...link} />
+        <NavLink key={index} link={link} isActive={false} />
       ))}
     </ul>
   )
@@ -31,11 +33,28 @@ function NavbarLinks() {
 
 /** Link do navbar. */
 function NavLink(
-  { href, text }: (typeof mainNavbar)[number] // props
+  { link, isActive = false }: NavLinkProps // props
 ) {
   return (
-    <li>
-      <Link href={href}>{text}</Link>
+    <li aria-label="navbar link">
+      <Link
+        href={link.href} // route
+        // style:
+        className={clsx(
+          `py-2.5 px-4.5 rounded-3xl
+          hover:bg-gray-20 hover:shadow-md transition-colors`, // estilo padrão
+          { "bg-gray-15": isActive } // estilo ativo
+        )}
+      >
+        {link.text}
+      </Link>
     </li>
   )
+}
+/** Props do `NavLink`. */
+interface NavLinkProps {
+  /** Link a ser renderizado. */
+  link: (typeof mainNavbar)[number]
+  /** Se o link está ou não ativo. */
+  isActive: boolean
 }

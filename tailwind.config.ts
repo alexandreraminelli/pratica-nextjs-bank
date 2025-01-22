@@ -45,6 +45,7 @@ export default {
       },
       /** Espaçamentos personalizados. */
       spacing: {
+        "4.5": "1.125rem /* 18px */",
         // Para container
         container: "var(--pd-container)",
       },

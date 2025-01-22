@@ -16,6 +16,7 @@ export default function LogoLink(
 ) {
   return (
     <Link href="/" aria-label="go to homepage">
+      <span className="sr-only">Go to Homepage</span>
       <LogoInline className={`hover:opacity-75 transition-opacity ${className}`} />
     </Link>
   )

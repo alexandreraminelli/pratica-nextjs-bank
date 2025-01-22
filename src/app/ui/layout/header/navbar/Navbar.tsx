@@ -1,4 +1,7 @@
+"use client"
+
 import mainNavbar from "@/data/constants/navigation/mainNavbar" // lista de links
+import useIsActive from "@/data/hooks/navigation/useIsActive"
 import clsx from "clsx"
 import Link from "next/link"
 
@@ -27,7 +30,7 @@ function NavbarLinks({ className }: { className?: string }) {
     <ul className={`flex flex-row gap-1.5 ${className}`}>
       {/* Iteração */}
       {mainNavbar.map((link, index) => (
-        <NavLink key={index} link={link} isActive={false} />
+        <NavLink key={index} {...link} />
       ))}
     </ul>
   )
@@ -35,8 +38,11 @@ function NavbarLinks({ className }: { className?: string }) {
 
 /** Link do navbar. */
 function NavLink(
-  { link, isActive = false }: NavLinkProps // props
+  { ...link }: (typeof mainNavbar)[number] // props
 ) {
+  /** Se o link está ou não ativo. */
+  const isActive = useIsActive(link.href)
+
   return (
     <li aria-label="navbar link">
       <Link
@@ -53,11 +59,4 @@ function NavLink(
       </Link>
     </li>
   )
-}
-/** Props do `NavLink`. */
-interface NavLinkProps {
-  /** Link a ser renderizado. */
-  link: (typeof mainNavbar)[number]
-  /** Se o link está ou não ativo. */
-  isActive: boolean
 }

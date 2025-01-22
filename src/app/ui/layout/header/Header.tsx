@@ -1,4 +1,5 @@
 import LogoLink from "@/app/ui/logo/LogoLink"
+import Navbar from "./navbar/Navbar"
 
 /**
  * Cabeçalho do site.
@@ -13,7 +14,11 @@ export default function Header() {
       bg-gray-11 rounded-full border border-gray-15
       sticky top-4"
     >
+      {/* Logo */}
       <LogoLink className="h-7" />
+
+      {/* Navbar */}
+      <Navbar />
     </header>
   )
 }

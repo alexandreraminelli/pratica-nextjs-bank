@@ -6,20 +6,23 @@ import clsx from "clsx"
  * @author Alexandre Raminelli
  */
 export default function Button(
-  { href, text, fill = "green", className }: ButtonProps // props
+  { href, text, fill = "green", height = "normal", className }: ButtonProps // props
 ) {
   return (
     <Link
       href={href} // endereço
       // style:
       className={clsx(
-        `py-3 px-6
+        `px-6
+        text-center text-nowrap text-sm md:text-base
         rounded-3xl transition-colors hover:shadow-lg
         ${className}`, // estilo padrão
         {
           // estilos condicionais
           "bg-green-60 hover:bg-green-80 text-gray-11": fill === "green", // bg verde
           "hover:bg-gray-15 text-white": fill === "none", // sem bg
+          "py-3.5": height === "normal", // altura normal
+          "py-3": height === "small", // altura pequena
         }
       )}
     >
@@ -34,8 +37,10 @@ interface ButtonProps {
   /** Texto do botão. */
   text: string
 
-  /** Preenchimento do botão. */
+  /** Preenchimento do botão. (opcional) */
   fill?: "green" | "none"
+  /** Altura do botão. (opcional) */
+  height?: "normal" | "small"
   /** Classes personalizadas. (opcional) */
   className?: string
 }

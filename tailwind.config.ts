@@ -5,6 +5,7 @@ export default {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      /** Cores personalizadas. */
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -29,7 +30,7 @@ export default {
           "99": "var(--white99)",
         },
         // Gray Shades
-        grey: {
+        gray: {
           "10": "var(--gray10)",
           "11": "var(--gray11)",
           "15": "var(--gray15)",
@@ -41,6 +42,11 @@ export default {
           "70": "var(--gray70)",
           "75": "var(--gray75)",
         },
+      },
+      /** Espaçamentos personalizados. */
+      spacing: {
+        // Para container
+        container: "var(--pd-container)",
       },
     },
   },

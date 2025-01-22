@@ -30,15 +30,9 @@
   --gray70: #b3b3b3;
   --gray75: #bfbfbf;
 
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Aplicação das cores */
+  --background: var(--gray10);
+  --foreground: white;
 }
 
 body {

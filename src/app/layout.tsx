@@ -1,6 +1,7 @@
 import type { Metadata } from "next" // metadata
 import "./globals.css" // styles
 import { lexend } from "./ui/fonts/fonts" // fonte
+import Header from "@/app/ui/layout/header/Header"
 
 /**
  * Metadados principais do site.
@@ -22,6 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lexend.className} antialiased`}>
+        {/* Cabeçalho */}
+        <Header />
+
         {/* Conteúdo da página */}
         {children}
       </body>

@@ -15,7 +15,7 @@ export default function Header() {
       sticky top-4"
     >
       {/* Logo */}
-      <LogoLink className="h-7" />
+      <LogoLink className="h-7 md:h-10 transition-all" />
 
       {/* Navbar */}
       <Navbar />

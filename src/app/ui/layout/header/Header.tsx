@@ -1,3 +1,4 @@
+import LoginOptions from "./navbar/LoginOptions"
 import LogoLink from "@/app/ui/logo/LogoLink"
 import Navbar from "./navbar/Navbar"
 
@@ -19,6 +20,9 @@ export default function Header() {
 
       {/* Navbar */}
       <Navbar />
+
+      {/* Opções de login */}
+      <LoginOptions className="max-md:hidden" />
     </header>
   )
 }

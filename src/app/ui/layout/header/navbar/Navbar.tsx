@@ -1,22 +1,24 @@
 import mainNavbar from "@/data/constants/navigation/mainNavbar" // lista de links
 import clsx from "clsx"
 import Link from "next/link"
-import BurguerButton from "./BurguerButton" // ícone hambúrguer
 
 /**
  * Barra de navegação do header.
  * @author Alexandre Raminelli
  */
-export default function Navbar() {
+export default function Navbar(
+  { className }: NavbarProps // props
+) {
   return (
-    <nav>
-      {/* Links */}
-      <NavbarLinks className="max-md:hidden" />
-
-      {/* Botão para mobile */}
-      <BurguerButton className="md:hidden" />
+    <nav className={className}>
+      <NavbarLinks />
     </nav>
   )
+}
+/** Props do `Navbar`. */
+interface NavbarProps {
+  /** Classes personalizadas. (opcional) */
+  className?: string
 }
 
 /** Grupo de links do navbar. */
@@ -42,6 +44,7 @@ function NavLink(
         // style:
         className={clsx(
           `py-2.5 px-4.5 rounded-3xl
+          text-sm lg:text-base
           hover:bg-gray-20 hover:shadow-md transition-colors`, // estilo padrão
           { "bg-gray-15": isActive } // estilo ativo
         )}

@@ -3,6 +3,33 @@
 @tailwind utilities;
 
 :root {
+  /* Paleta de cores */
+  /* Green Shades */
+  --green60: #caff33;
+  --green65: #d1ff4c;
+  --green70: #d8ff66;
+  --green80: #e5ff99;
+  --green90: #f2ffcc;
+  --green95: #f8ffe5;
+  --green97: #fbfff0;
+  --green99: #fefffa;
+  /* White Shades */
+  --white90: #e4e4e7;
+  --white95: #f1f1f3;
+  --white97: #f7f7f8;
+  --white99: #fcfcfd;
+  /* Grey Shades */
+  --grey10: #191919;
+  --gray11: #1c1c1c;
+  --gray15: #262626;
+  --gray20: #333333;
+  --gray30: #4c4c4d;
+  --gray35: #59595a;
+  --gray40: #656567;
+  --gray60: #98989a;
+  --gray70: #b3b3b3;
+  --gray75: #bfbfbf;
+
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -15,7 +42,7 @@
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

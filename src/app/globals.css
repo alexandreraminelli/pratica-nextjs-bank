@@ -64,3 +64,15 @@ body {
   background-color: var(--green60);
   color: black;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--gray30);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--green65);
+  border-radius: 12px;
+}

@@ -2,6 +2,7 @@ import type { Metadata } from "next" // metadata
 import "./globals.css" // styles
 import { lexend } from "./ui/fonts/fonts" // fonte
 import Header from "@/app/ui/layout/header/Header"
+import Footer from "@/app/ui/layout/footer/Footer"
 
 /**
  * Metadados principais do site.
@@ -28,6 +29,9 @@ export default function RootLayout({
 
         {/* Conteúdo da página */}
         {children}
+
+        {/* Rodapé */}
+        <Footer />
       </body>
     </html>
   )

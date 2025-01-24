@@ -1,4 +1,5 @@
 import LogoLink from "@/app/ui/logo/LogoLink"
+import FooterContact from "./components/FooterContact"
 import FooterNav from "./components/FooterNav"
 
 /**
@@ -11,12 +12,13 @@ export default function Footer() {
       aria-label="page footer"
       className="flex flex-col
         bg-gray-11
-        px-container pt-14 md:pt-16 pb-8 gap-5"
+        px-container pt-14 md:pt-16 pb-8 gap-8 md:gap-10"
     >
       {/* Footer main */}
       <FooterMain />
 
       {/* Contato */}
+      <FooterContact />
 
       {/* Redes sociais e legal */}
     </footer>

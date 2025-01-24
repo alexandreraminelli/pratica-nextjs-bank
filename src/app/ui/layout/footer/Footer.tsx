@@ -11,7 +11,7 @@ export default function Footer() {
       aria-label="page footer"
       className="flex flex-col
         bg-gray-11
-        pt-14 pb-8 px-container gap-5"
+        px-container pt-14 md:pt-16 pb-8 gap-5"
     >
       {/* Footer main */}
       <FooterMain />
@@ -26,9 +26,9 @@ export default function Footer() {
 /** Conteúdo principal do footer. */
 function FooterMain() {
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-6 md:gap-10">
       {/* Logo */}
-      <LogoLink className="h-8" />
+      <LogoLink className="h-8 md:h-9" />
       {/* Navbar */}
       <FooterNav />
     </div>

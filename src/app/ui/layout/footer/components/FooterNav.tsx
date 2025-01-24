@@ -30,7 +30,8 @@ function FooterNavLink({ link }: FooterNavLinkProps) {
       <Link
         href={link.href} // rota
         className="hover:bg-gray-20 hover:shadow-lg rounded-3xl transition-colors
-        text-sm text-center py-2 px-3"
+        text-sm md:text-base text-center 
+        py-2 px-3"
       >
         {link.text}
       </Link>

@@ -42,6 +42,7 @@ function SocialButton({ socialMedia }: SocialButtonProps) {
   return (
     <a
       href={socialMedia.url}
+      target="_blank"
       // styles:
       className="rounded-full p-3
         flex items-center justify-center size-fit
@@ -49,6 +50,8 @@ function SocialButton({ socialMedia }: SocialButtonProps) {
         *:size-5 *:hover:size-6
         hover:shadow-lg transition-all *:transition-all"
     >
+      {/* Rótulo */}
+      <span className="sr-only">{socialMedia.text}</span>
       {/* Ícone */}
       <socialMedia.Icon />
     </a>

@@ -9,7 +9,8 @@ export default function FooterEnd() {
   return (
     <div
       className="md:flex flex-row items-center justify-between
-      md:bg-gray-10 md:border border-gray-15 rounded-full"
+      md:bg-gray-10 md:border border-gray-15 rounded-full
+      md:p-3"
     >
       {/* Redes sociais */}
       <FooterSocial className="max-md:-mb-7" />
@@ -23,14 +24,15 @@ export default function FooterEnd() {
 function FooterLegal() {
   return (
     <section
-      className="flex max-md:flex-col md:flex-row items-center
+      className="flex max-md:flex-col md:flex-row items-center md:justify-end
       max-md:pt-14 max-md:pb-8 max-md:px-6 gap-5
       md:p-3
-      text-gray-70 font-light max-md:text-sm
+      md:w-full *:flex-1
+      text-gray-70 text-center md:text-end font-light max-sm:text-sm transition-all
       max-md:bg-gray-10 rounded-xl max-md:border border-gray-15"
     >
       {/* Todos os direitos reservados */}
-      <p>YourBank All Rights Reserved</p>
+      <p className="md:mx-auto">YourBank All Rights Reserved</p>
 
       {/* Links legais */}
       <p>

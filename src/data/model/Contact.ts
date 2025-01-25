@@ -9,6 +9,13 @@ export default interface Contact {
   tel: ContactFormat
   /** Endereço do banco. */
   address: ContactFormat
+
+  /** Redes sociais do banco. */
+  socialMedia: {
+    facebook: ContactFormat
+    instagram: ContactFormat
+    linkedIn: ContactFormat
+  }
 }
 
 /** Formato de informação de contato. */

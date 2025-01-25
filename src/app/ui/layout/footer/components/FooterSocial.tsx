@@ -46,7 +46,7 @@ function SocialButton({ socialMedia }: SocialButtonProps) {
       className="rounded-full p-3
         flex items-center justify-center size-fit
         bg-green-60 hover:bg-green-80 text-gray-15 hover:text-gray-20
-        *:size-5 *:hover:size-7
+        *:size-5 *:hover:size-6
         hover:shadow-lg transition-all *:transition-all"
     >
       {/* Ícone */}

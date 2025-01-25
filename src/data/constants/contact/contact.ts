@@ -37,7 +37,7 @@ const contact: Contact = {
     instagram: {
       Icon: InstagramIcon,
       text: "Instagram",
-      url: "https://www.x.com",
+      url: "https://www.instagram.com",
     },
   },
 }

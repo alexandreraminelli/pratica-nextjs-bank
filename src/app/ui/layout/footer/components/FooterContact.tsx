@@ -1,4 +1,4 @@
-import contact from "@/data/constants/contact" // informações de contato
+import contact from "@/data/constants/contact/contact" // informações de contato
 import { ContactFormat } from "@/data/model/Contact"
 
 /**

@@ -12,7 +12,7 @@ export default function FooterSocial(
   { className }: FooterSocialProps // props
 ) {
   return (
-    <div
+    <section
       className={`flex flex-row justify-center items-center gap-2
         ${className}`}
     >
@@ -22,7 +22,7 @@ export default function FooterSocial(
       <SocialButton socialMedia={instagram} />
       {/* LinkedIn */}
       <SocialButton socialMedia={linkedIn} />
-    </div>
+    </section>
   )
 }
 /** Props do `FooterSocial`. */

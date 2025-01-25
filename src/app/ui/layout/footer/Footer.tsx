@@ -1,6 +1,7 @@
 import LogoLink from "@/app/ui/logo/LogoLink"
 import FooterContact from "./components/FooterContact"
 import FooterNav from "./components/FooterNav"
+import FooterEnd from "./components/FooterEnd"
 
 /**
  * Rodapé do site.
@@ -21,6 +22,7 @@ export default function Footer() {
       <FooterContact />
 
       {/* Redes sociais e legal */}
+      <FooterEnd />
     </footer>
   )
 }

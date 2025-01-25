@@ -15,7 +15,7 @@ export default function Header() {
       bg-gray-11 rounded-full border border-gray-15
       lg:*:flex-1
       sticky top-4 
-      hover:shadow-lg hover:border-gray-20 transition-all"
+      hover:shadow-lg hover:border-gray-40 transition-all"
     >
       {/* Logo */}
       <LogoLink className="h-7 md:h-10 transition-all" />

@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lexend.className} antialiased`}>
+      <body className={`${lexend.className} antialiased bg-gray-10 text-white`}>
         {/* Cabeçalho */}
         <Header />
 

@@ -1,6 +1,7 @@
 import Badge from "@/app/ui/components/badge/Badge"
 import Button from "@/app/ui/components/button/Button"
 import heroSectionContent from "@/data/constants/pages/homepage/heroSection" // dados do Hero Section
+import Image from "next/image"
 
 // Desencapsular dados
 const { badge, title, paragraph, button } = heroSectionContent
@@ -13,7 +14,8 @@ export default function HeroSection() {
   return (
     <section
       className="flex flex-col items-center
-      px-container py-14"
+      px-container py-14
+      gap-12"
     >
       <div className="flex flex-col gap-8">
         {/* Header */}
@@ -40,6 +42,11 @@ export default function HeroSection() {
           <Button text={button.text} href={button.href} />
         </aside>
       </div>
+
+      {/* Exemplo de UI */}
+      <picture className="max-md:-mx-1">
+        <Image src="/homepage/ui-example.svg" alt="Example of the transaction viewing interface of the YourBanK application." width={775} height={757} />
+      </picture>
     </section>
   )
 }

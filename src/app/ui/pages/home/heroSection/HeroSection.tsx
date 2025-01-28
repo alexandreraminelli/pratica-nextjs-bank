@@ -1,8 +1,9 @@
 import Badge from "@/app/ui/components/badge/Badge"
+import Button from "@/app/ui/components/button/Button"
 import heroSectionContent from "@/data/constants/pages/homepage/heroSection" // dados do Hero Section
 
 // Desencapsular dados
-const { badge, title, paragraph } = heroSectionContent
+const { badge, title, paragraph, button } = heroSectionContent
 
 /**
  * Hero Section da página inicial.
@@ -35,7 +36,9 @@ export default function HeroSection() {
         </header>
 
         {/* Botão */}
-        <aside className="flex justify-center">Button</aside>
+        <aside className="flex justify-center md:justify-start">
+          <Button text={button.text} href={button.href} />
+        </aside>
       </div>
     </section>
   )

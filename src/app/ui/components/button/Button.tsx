@@ -31,7 +31,7 @@ export default function Button(
   )
 }
 /** Props do `Button`. */
-interface ButtonProps {
+export interface ButtonProps {
   /** Link do botão. */
   href: string
   /** Texto do botão. */

@@ -18,12 +18,12 @@ export default function Badge(
       {/* Ícone */}
       {Icon && <Icon className="size-5 text-green-60" />}
       {/* Texto */}
-      <span className="font-light text-xs sm:text-sm md:text-base">{text}</span>
+      <span className="font-light text-xs md:text-sm">{text}</span>
     </div>
   )
 }
 /** Props do `Badge`. */
-interface BadgeProps {
+export interface BadgeProps {
   /** Ícone do badge. (opcional) */
   Icon?: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
   /** Texto do badge. */

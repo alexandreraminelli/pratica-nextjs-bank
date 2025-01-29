@@ -13,27 +13,30 @@ const { badge, title, paragraph, button } = heroSectionContent
 export default function HeroSection() {
   return (
     <section
-      className="flex flex-col items-center
+      className="flex flex-col md:flex-row items-center lg:items-start
       px-container py-14
       gap-12"
     >
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 md:gap-10 md:w-4/5 lg:w-2/3">
         {/* Header */}
-        <header className="flex flex-col gap-3 items-center">
+        <header
+          className="flex flex-col items-center md:items-start
+          gap-3 md:gap-4 lg:mt-10"
+        >
           {/* Badge */}
           <Badge {...badge} />
 
           {/* Texto */}
           <div
-            className="flex flex-col gap-2 
-            text-center *:leading-normal"
+            className="flex flex-col gap-2 md:gap-3
+            text-center md:text-start *:leading-normal"
           >
             {/* Título */}
-            <h2 className="font-medium text-3xl">
+            <h2 className="font-medium text-3xl md:text-4xl">
               {title.normal} <strong className="font-medium text-green-60">{title.strong}</strong>
             </h2>
             {/* Parágrafo */}
-            <p className="font-light text-sm">{paragraph}</p>
+            <p className="font-light max-md:text-sm">{paragraph}</p>
           </div>
         </header>
 
@@ -45,7 +48,7 @@ export default function HeroSection() {
 
       {/* Exemplo de UI */}
       <picture className="max-md:-mx-1">
-        <Image src="/homepage/ui-example.svg" alt="Example of the transaction viewing interface of the YourBanK application." width={775} height={757} />
+        <Image src="/homepage/ui-example.svg" alt="Example of the transaction viewing interface of the YourBanK application." width={775} height={757} className="w-full" />
       </picture>
     </section>
   )

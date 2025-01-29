@@ -3,7 +3,7 @@ import { Bars3Icon } from "@heroicons/react/24/outline"
  * Botão que abre a barra de navegação mobile.
  * @author Alexandre Raminelli
  */
-export default function BurguerButton({ className }: BurguerButtonProps) {
+export default function BurgerButton({ className }: BurgerButtonProps) {
   return (
     <button
       className={`grid place-items-center
@@ -18,8 +18,8 @@ export default function BurguerButton({ className }: BurguerButtonProps) {
   )
 }
 
-/** Props do `BurguerButton` */
-interface BurguerButtonProps {
+/** Props do `BurgerButton` */
+interface BurgerButtonProps {
   /** Classes personalizadas. (opcional) */
   className?: string
 }

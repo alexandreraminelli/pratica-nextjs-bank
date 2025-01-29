@@ -1,7 +1,7 @@
 import LoginOptions from "./navbar/LoginOptions"
 import LogoLink from "@/app/ui/logo/LogoLink"
 import Navbar from "./navbar/Navbar"
-import BurguerButton from "./navbar/BurguerButton" // ícone hambúrguer
+import BurgerButton from "./navbar/BurgerButton" // ícone hambúrguer
 
 /**
  * Cabeçalho do site.
@@ -27,7 +27,7 @@ export default function Header() {
         {/* Opções de login */}
         <LoginOptions className="max-md:hidden" />
         {/* Botão de navbar mobile */}
-        <BurguerButton className="lg:hidden" />
+        <BurgerButton className="lg:hidden" />
       </div>
     </header>
   )

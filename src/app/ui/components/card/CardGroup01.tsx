@@ -13,10 +13,11 @@ export default function CardGroup01(
     <div
       aria-label="cards group"
       className="flex flex-col *:flex-1
-        "
+        md:flex-row
+        max-md:divide-y md:divide-x divide-gray-15"
     >
       {cardList.map((card, index) => (
-        <Card01 key={index} card={card} />
+        <Card01 key={index} card={card} className="max-md:py-8" />
       ))}
     </div>
   )

@@ -26,7 +26,7 @@ export default function ProductSection() {
       </div>
 
       {/* Cards */}
-      <CardGroup01 cardList={productCards} className="md:mt-20" />
+      <CardGroup01 cardList={productCards.individualCards} className="md:mt-20" />
     </section>
   )
 }

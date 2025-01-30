@@ -14,5 +14,10 @@ export default interface ProductSection {
   cardsOptions: ToggleButtonProps["options"]
 
   /** Cards com descrição dos produtos oferecidos. */
-  productCards: CardWithIcon[]
+  productCards: {
+    /** Cards de produtos individuais. */
+    individualCards: CardWithIcon[]
+    /** Cards de produtos empresariais. */
+    businessCards: CardWithIcon[]
+  }
 }

@@ -12,7 +12,7 @@ const { introduction, cardsOptions, productCards } = productSection
  */
 export default function ProductSection() {
   return (
-    <section className="px-container">
+    <section className="px-container md:mb-24">
       <div
         className="flex flex-col md:flex-row
         items-center md:items-end md:justify-between
@@ -26,7 +26,7 @@ export default function ProductSection() {
       </div>
 
       {/* Cards */}
-      <CardGroup01 cardList={productCards} />
+      <CardGroup01 cardList={productCards} className="md:mt-20" />
     </section>
   )
 }

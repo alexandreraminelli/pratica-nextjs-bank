@@ -19,7 +19,7 @@ export default function Button(
         {
           // estilos condicionais
           "bg-green-60 hover:bg-green-80 text-gray-11": fill === "green", // bg verde
-          "hover:bg-gray-15 text-white": fill === "none", // sem bg
+          "hover:bg-gray-20 text-white": fill === "none", // sem bg
           "py-3.5 px-6": height === "normal", // altura normal
           "py-3 px-6": height === "small", // altura pequena
           "py-2.5 px-4.5": height === "extra-small", // altura extra-pequena

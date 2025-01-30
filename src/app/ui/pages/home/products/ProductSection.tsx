@@ -10,9 +10,11 @@ const { introduction } = productSection
  */
 export default function ProductSection() {
   return (
-    <section>
-      {/* Introdução */}
-      <SectionHeader content={introduction} />
+    <section className="px-container">
+      <div>
+        {/* Introdução */}
+        <SectionHeader content={introduction} />
+      </div>
     </section>
   )
 }

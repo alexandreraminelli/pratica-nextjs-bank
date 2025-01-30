@@ -12,6 +12,8 @@ const productSection: ProductSection = {
     },
     introductionText: "Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations",
   },
+
+  cardsOptions: ["For Individuals", "For Businesses"],
 }
 
 export default productSection

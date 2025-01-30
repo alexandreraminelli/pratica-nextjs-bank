@@ -1,5 +1,5 @@
 import Badge from "@/app/ui/components/badge/Badge"
-import Button from "@/app/ui/components/button/Button"
+import ButtonLink from "@/app/ui/components/button/ButtonLink"
 import heroSectionContent from "@/data/constants/pages/homepage/heroSection" // dados do Hero Section
 import Image from "next/image"
 
@@ -42,7 +42,7 @@ export default function HeroSection() {
 
         {/* Botão */}
         <aside className="flex justify-center md:justify-start">
-          <Button text={button.text} href={button.href} />
+          <ButtonLink text={button.text} href={button.href} />
         </aside>
       </div>
 

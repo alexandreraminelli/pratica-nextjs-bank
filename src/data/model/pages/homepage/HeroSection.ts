@@ -1,5 +1,5 @@
 import { BadgeProps } from "@/app/ui/components/badge/Badge" // modelo do badge
-import { ButtonProps } from "@/app/ui/components/button/Button" // modelo dos botões
+import { ButtonLinkProps } from "@/app/ui/components/button/ButtonLink" // modelos dos botões
 
 /**
  * Modelo de dados do conteúdo do Hero Section da página inicial.
@@ -20,5 +20,5 @@ export default interface HeroSection {
   paragraph: string
 
   /** Botão de Call To Action. */
-  button: ButtonProps
+  button: ButtonLinkProps
 }

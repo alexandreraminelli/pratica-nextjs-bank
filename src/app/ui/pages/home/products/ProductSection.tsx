@@ -1,9 +1,10 @@
 import SectionHeader from "@/app/ui/components/sections/SectionHeader"
 import ToggleButton from "@/app/ui/components/selection/ToggleButton"
 import productSection from "@/data/constants/pages/homepage/productSection"
+import CardGroup01 from "@/app/ui/components/card/CardGroup01"
 
 // Desencapsulamento do conteúdo
-const { introduction, cardsOptions } = productSection
+const { introduction, cardsOptions, productCards } = productSection
 
 /**
  * Seção de produtos da página inicial.
@@ -23,6 +24,9 @@ export default function ProductSection() {
         {/* Botão de selecionar cards */}
         <ToggleButton options={cardsOptions} />
       </div>
+
+      {/* Cards */}
+      <CardGroup01 cardList={productCards} />
     </section>
   )
 }

@@ -1,4 +1,4 @@
-import Button from "@/app/ui/components/button/Button"
+import ButtonLink from "@/app/ui/components/button/ButtonLink"
 
 /**
  * Botões de opções de login exibidos no header.
@@ -13,9 +13,9 @@ export default function LoginOptions(
       aria-label="login actions" // acessibilidade
     >
       {/* Botão de Criar Conta */}
-      <Button href="/signup" text="Sign Up" fill="none" height="small" />
+      <ButtonLink href="/signup" text="Sign Up" fill="none" height="small" />
       {/* Botão de Login */}
-      <Button href="/login" text="Login" fill="green" height="small" />
+      <ButtonLink href="/login" text="Login" fill="green" height="small" />
     </nav>
   )
 }

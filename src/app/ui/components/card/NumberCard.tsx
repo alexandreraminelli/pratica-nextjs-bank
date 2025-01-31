@@ -14,14 +14,14 @@ export default function NumberCard(
     <div
       className="flex flex-col justify-start
         gap-0.5 md:gap-1
-        max-sm:py-7 sm:px-10 md:px-12 sm:first:pt-0
+        max-sm:py-7 sm:px-8 max-sm:first:pt-0 max-sm:last:pb-0
         items-center text-center md:items-start md:text-start
         transition-all"
     >
       {/* Valor */}
       <span className="font-medium text-green-60 text-4xl">
         {value}
-        {suffix && suffix} {/* Sufixo */}
+        {suffix} {/* Sufixo */}
       </span>
 
       {/* Descrição */}

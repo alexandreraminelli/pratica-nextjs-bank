@@ -15,7 +15,8 @@ export default function UseCaseExplanation(
   return (
     <section
       className={clsx(
-        `flex flex-col-reverse`, // estilo principal
+        `flex flex-col-reverse md:gap-14
+        md:*:w-1/2`, // estilo principal
         {
           "md:flex-row": index % 2 !== 0, // índice ímpar (direita)
           "md:flex-row-reverse": index % 2 === 0, // índice par (esquerda)

@@ -1,3 +1,4 @@
+import NumberCardGroup from "@/app/ui/components/card/NumberCardGroup"
 import { UseCaseTypes } from "@/data/model/pages/homepage/UseCasesSection"
 import clsx from "clsx"
 
@@ -8,7 +9,7 @@ export default function UseCaseExplanation(
   { index, useCaseContent }: UseCaseExplanationProps // props
 ) {
   // desencapsulamento do conteúdo
-  const { type, description } = useCaseContent
+  const { type, description, numericalData } = useCaseContent
 
   return (
     <section
@@ -21,7 +22,7 @@ export default function UseCaseExplanation(
       )}
     >
       {/* Coluna */}
-      <div>
+      <div className="flex flex-col gap-12">
         {/* Texto */}
         <article className="flex flex-col gap-2.5 text-center md:text-start">
           {/* Título */}
@@ -29,6 +30,11 @@ export default function UseCaseExplanation(
           {/* Parágrafo */}
           <p className="font-light text-gray-70 max-md:text-sm leading-[1.5]">{description}</p>
         </article>
+
+        {/* Cards numéricos */}
+        <NumberCardGroup cards={numericalData} />
+
+        {/* Botão */}
       </div>
 
       {/* Cards */}

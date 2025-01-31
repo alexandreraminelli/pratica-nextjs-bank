@@ -1,3 +1,4 @@
+import NumberCard from "@/data/model/cards/NumberCard"
 import SectionIntroduction from "@/data/model/section/SectionIntroduction"
 
 /**
@@ -18,4 +19,7 @@ interface UseCaseTypes {
   type: string
   /** Descrição do caso de uso. */
   description: string
+
+  /** Informações numéricas. */
+  numericalData: NumberCard[]
 }

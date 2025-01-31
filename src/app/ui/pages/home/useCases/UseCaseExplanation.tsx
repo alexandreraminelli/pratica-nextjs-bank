@@ -1,4 +1,5 @@
 import NumberCardGroup from "@/app/ui/components/card/NumberCardGroup"
+import IconCardGroup01 from "@/app/ui/components/card/IconCardGroup01"
 import { UseCaseTypes } from "@/data/model/pages/homepage/UseCasesSection"
 import clsx from "clsx"
 import Button from "@/app/ui/components/button/Button"
@@ -10,7 +11,7 @@ export default function UseCaseExplanation(
   { index, useCaseContent }: UseCaseExplanationProps // props
 ) {
   // desencapsulamento do conteúdo
-  const { type, description, numericalData } = useCaseContent
+  const { type, description, numericalData, mainTopics } = useCaseContent
 
   return (
     <section
@@ -45,7 +46,7 @@ export default function UseCaseExplanation(
       </div>
 
       {/* Cards */}
-      <div>Cards</div>
+      <IconCardGroup01 cards={mainTopics} />
     </section>
   )
 }

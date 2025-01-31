@@ -21,9 +21,11 @@ export default function UseCasesSection() {
       </div>
 
       {/* Seções de casos de uso */}
-      {useCaseTypes.map((useCase, index) => (
-        <UseCaseExplanation key={index} index={index} useCaseContent={useCase} />
-      ))}
+      <div className="flex flex-col md:gap-10">
+        {useCaseTypes.map((useCase, index) => (
+          <UseCaseExplanation key={index} index={index} useCaseContent={useCase} />
+        ))}
+      </div>
     </section>
   )
 }

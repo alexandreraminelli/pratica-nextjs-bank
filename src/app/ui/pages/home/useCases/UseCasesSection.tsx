@@ -1,8 +1,9 @@
 import SectionHeader from "@/app/ui/components/sections/SectionHeader"
 import useCasesSection from "@/data/constants/pages/homepage/useCasesSection"
+import UseCaseExplanation from "./UseCaseExplanation"
 
 // Desencapsulamento do conteúdo
-const { introduction } = useCasesSection
+const { introduction, useCaseTypes } = useCasesSection
 
 /**
  * Seção de casos de uso da página inicial.
@@ -10,11 +11,19 @@ const { introduction } = useCasesSection
  */
 export default function UseCasesSection() {
   return (
-    <section>
+    <section
+      className="
+        px-container pt-20"
+    >
       {/* Cabeçalho */}
       <div>
         <SectionHeader content={introduction} />
       </div>
+
+      {/* Seções de casos de uso */}
+      {useCaseTypes.map((useCase, index) => (
+        <UseCaseExplanation key={index} index={index} useCaseContent={useCase} />
+      ))}
     </section>
   )
 }

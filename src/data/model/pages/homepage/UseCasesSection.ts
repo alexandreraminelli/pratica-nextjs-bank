@@ -15,7 +15,7 @@ export default interface UseCasesSection {
 }
 
 /** Conteúdo dos tipos de casos de uso. */
-interface UseCaseTypes {
+export interface UseCaseTypes {
   /** Tipo de caso de uso. */
   type: string
   /** Descrição do caso de uso. */

@@ -5,6 +5,17 @@ import SectionIntroduction from "@/data/model/section/SectionIntroduction"
  * @author Alexandre Raminelli
  */
 export default interface UseCasesSection {
-    /** Introdução da seção. */
-    introduction: SectionIntroduction
+  /** Introdução da seção. */
+  introduction: SectionIntroduction
+
+  /** Seções de casos de uso. */
+  useCaseTypes: UseCaseTypes[]
+}
+
+/** Conteúdo dos tipos de casos de uso. */
+interface UseCaseTypes {
+  /** Tipo de caso de uso. */
+  type: string
+  /** Descrição do caso de uso. */
+  description: string
 }

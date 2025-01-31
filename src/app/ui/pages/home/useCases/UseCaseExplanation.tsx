@@ -8,12 +8,12 @@ export default function UseCaseExplanation(
   { index, useCaseContent }: UseCaseExplanationProps // props
 ) {
   // desencapsulamento do conteúdo
-  const { type } = useCaseContent
+  const { type, description } = useCaseContent
 
   return (
-    <article
+    <section
       className={clsx(
-        `flex flex-col`, // estilo principal
+        `flex flex-col-reverse`, // estilo principal
         {
           "md:flex-row": index % 2 !== 0, // índice ímpar (direita)
           "md:flex-row-reverse": index % 2 === 0, // índice par (esquerda)
@@ -22,12 +22,18 @@ export default function UseCaseExplanation(
     >
       {/* Coluna */}
       <div>
-        <h3>{type}</h3>
+        {/* Texto */}
+        <article className="flex flex-col gap-2.5 text-center md:text-start">
+          {/* Título */}
+          <h3 className="font-medium text-xl md:text-2xl">{type}</h3>
+          {/* Parágrafo */}
+          <p className="font-light text-gray-70 max-md:text-sm leading-[1.5]">{description}</p>
+        </article>
       </div>
 
       {/* Cards */}
       <div>Cards</div>
-    </article>
+    </section>
   )
 }
 /** Props do `UseCaseExplanation`. */

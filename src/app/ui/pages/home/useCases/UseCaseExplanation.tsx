@@ -25,10 +25,11 @@ export default function UseCaseExplanation(
       {/* Coluna */}
       <div
         className="flex flex-col items-center md:items-start
-        gap-12"
+        gap-12
+        transition-all "
       >
         {/* Texto */}
-        <article className="flex flex-col gap-2.5 text-center md:text-start">
+        <article className="flex flex-col gap-2.5 text-center md:text-start *:transition-all">
           {/* Título */}
           <h3 className="font-medium text-xl md:text-2xl">{type}</h3>
           {/* Parágrafo */}

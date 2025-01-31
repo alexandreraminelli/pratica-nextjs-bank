@@ -12,19 +12,20 @@ export default function NumberCard(
 
   return (
     <div
-      className="flex flex-col 
+      className="flex flex-col justify-start
         gap-0.5 md:gap-1
-        max-md:py-7 md:px-12
-        items-center text-center md:items-start md:text-start"
+        max-sm:py-7 sm:px-10 md:px-12 sm:first:pt-0
+        items-center text-center md:items-start md:text-start
+        transition-all"
     >
       {/* Valor */}
       <span className="font-medium text-green-60 text-4xl">
-        {value} {/* Número */}
+        {value}
         {suffix && suffix} {/* Sufixo */}
       </span>
 
       {/* Descrição */}
-      <span className="font-light text-gray-70 max-md:text-sm leading-[1.5]">{description}</span>
+      <span className="h-full font-light text-gray-70 max-md:text-sm leading-[1.5]">{description}</span>
     </div>
   )
 }

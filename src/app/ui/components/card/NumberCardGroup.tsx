@@ -10,8 +10,9 @@ export default function NumberCardGroup(
 ) {
   return (
     <div
-      className="flex flex-col md:flex-row items-center
-        max-md:divide-y-2 md:divide-x-2 divide-gray-15 divide-dashed"
+      className="grid grid-cols-1 sm:grid-cols-3
+      max-sm:divide-y-2 sm:divide-x-2 divide-gray-15 divide-dashed
+      transition-all"
     >
       {cards.map((card, index) => (
         <NumberCard key={index} cardContent={card} />

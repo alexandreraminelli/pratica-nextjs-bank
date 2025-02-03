@@ -5,8 +5,8 @@ import IconCard01 from "./IconCard01"
  * Grupo de cards `SimpleIconCard01`.
  * @author Alexandre Raminelli
  */
-export default function IconCardGroup01(
-  { cards }: SimpleIconCardGroup01Props // props
+export default function IconCard01Group(
+  { cards }: IconCard01GroupProps // props
 ) {
   return (
     <div>
@@ -17,8 +17,8 @@ export default function IconCardGroup01(
   )
 }
 
-/** Props de `SimpleIconCardGroup01`. */
-interface SimpleIconCardGroup01Props {
+/** Props de `IconCard01Group`. */
+interface IconCard01GroupProps {
   /** Lista de cards. */
   cards: SimpleIconCard[]
 }

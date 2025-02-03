@@ -1,5 +1,5 @@
 import NumberCardGroup from "@/app/ui/components/card/NumberCardGroup"
-import IconCardGroup01 from "@/app/ui/components/card/IconCardGroup01"
+import IconCard01Group from "@/app/ui/components/card/IconCard01Group"
 import { UseCaseTypes } from "@/data/model/pages/homepage/UseCasesSection"
 import clsx from "clsx"
 import Button from "@/app/ui/components/button/Button"
@@ -46,7 +46,7 @@ export default function UseCaseExplanation(
       </div>
 
       {/* Cards */}
-      <IconCardGroup01 cards={mainTopics} />
+      <IconCard01Group cards={mainTopics} />
     </section>
   )
 }

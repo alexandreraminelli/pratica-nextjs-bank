@@ -1,7 +1,7 @@
 import SectionHeader from "@/app/ui/components/sections/SectionHeader"
 import ToggleButton from "@/app/ui/components/selection/ToggleButton"
 import productSection from "@/data/constants/pages/homepage/productSection"
-import CardGroup01 from "@/app/ui/components/card/CardGroup01"
+import Card01Group from "@/app/ui/components/card/Card01Group"
 
 // Desencapsulamento do conteúdo
 const { introduction, cardsOptions, productCards } = productSection
@@ -26,7 +26,7 @@ export default function ProductSection() {
       </div>
 
       {/* Cards */}
-      <CardGroup01 cardList={productCards.individualCards} className="md:mt-20" />
+      <Card01Group cardList={productCards.individualCards} className="md:mt-20" />
     </section>
   )
 }

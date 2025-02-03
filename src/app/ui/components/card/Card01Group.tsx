@@ -6,8 +6,8 @@ import CardWithIcon from "@/data/model/cards/CardWithIcon"
  *
  * @author Alexandre Raminelli
  */
-export default function CardGroup01(
-  { cardList, className }: CardGroup01Props // props
+export default function Card01Group(
+  { cardList, className }: Card01GroupProps // props
 ) {
   return (
     <div
@@ -24,7 +24,7 @@ export default function CardGroup01(
   )
 }
 /** Props de `CardGroup01`. */
-interface CardGroup01Props {
+interface Card01GroupProps {
   /** Arrays de cards. */
   cardList: CardWithIcon[]
 

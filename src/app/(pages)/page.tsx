@@ -1,5 +1,6 @@
 import HeroSection from "@/app/ui/pages/home/heroSection/HeroSection"
 import ProductSection from "@/app/ui/pages/home/products/ProductSection"
+import UseCasesSection from "@/app/ui/pages/home/useCases/UseCasesSection"
 
 /**
  * Página inicial do site.
@@ -15,6 +16,7 @@ export default function HomePage() {
       <ProductSection />
 
       {/* Use Cases */}
+      <UseCasesSection />
 
       {/* Features */}
 

@@ -12,11 +12,16 @@ export default function IconCard01(
   const { Icon, text } = card
 
   return (
-    <div aria-label="card">
+    <div
+      aria-label="card"
+      className="flex flex-col items-center text-center
+      max-md:py-5 max-md:px-3.5 md:p-6 gap-3.5
+      bg-gray-10 rounded-xl border border-gray-15"
+    >
       {/* Ícone */}
       <EmphasizedIcon Icon={Icon} />
       {/* Texto */}
-      <span>{text}</span>
+      <span className="max-sm:text-sm leading-[1.5]">{text}</span>
     </div>
   )
 }

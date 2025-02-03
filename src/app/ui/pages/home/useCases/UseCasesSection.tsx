@@ -12,7 +12,8 @@ const { introduction, useCaseTypes } = useCasesSection
 export default function UseCasesSection() {
   return (
     <section
-      className="
+      className="flex flex-col 
+        gap-10 md:gap-14
         px-container pt-20"
     >
       {/* Cabeçalho */}
@@ -21,7 +22,7 @@ export default function UseCasesSection() {
       </div>
 
       {/* Seções de casos de uso */}
-      <div className="flex flex-col md:gap-10">
+      <div className="flex flex-col gap-10">
         {useCaseTypes.map((useCase, index) => (
           <UseCaseExplanation key={index} index={index} useCaseContent={useCase} />
         ))}

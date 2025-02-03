@@ -9,7 +9,12 @@ export default function IconCard01Group(
   { cards }: IconCard01GroupProps // props
 ) {
   return (
-    <div>
+    <div
+      className="grid grid-cols-2
+      p-5 md:p-10 gap-2.5
+      bg-gray-11 rounded-2xl
+      transition-all"
+    >
       {cards.map((card, index) => (
         <IconCard01 key={index} card={card} />
       ))}

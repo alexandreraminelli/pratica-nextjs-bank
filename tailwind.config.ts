@@ -49,6 +49,11 @@ export default {
         // Para container
         container: "var(--pd-container)",
       },
+      /** Imagens de fundo. */
+      backgroundImage: {
+        "abstract01-left": "url('/abstract-design/abstract01-left.svg')",
+        "abstract01-right": "url('/abstract-design/abstract01-right.svg')",
+      },
     },
   },
   plugins: [],

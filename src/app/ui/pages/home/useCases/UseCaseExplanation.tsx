@@ -46,7 +46,7 @@ export default function UseCaseExplanation(
       </div>
 
       {/* Cards */}
-      <IconCard01Group cards={mainTopics} />
+      <IconCard01Group cards={mainTopics} layout={index % 2 ? "right" : "left"} />
     </section>
   )
 }

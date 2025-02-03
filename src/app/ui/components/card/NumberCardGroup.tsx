@@ -12,8 +12,8 @@ export default function NumberCardGroup(
     <div
       className="grid grid-cols-1 sm:grid-cols-3
       max-sm:divide-y-2 sm:divide-x-2 divide-gray-15 divide-dashed
-      first:*:ps-0 first:*:items-start
-      last:*:pe-0 last:*:items-end last:*:text-end
+      md:first:*:ps-0 md:first:*:items-start
+      md:last:*:pe-0 md:last:*:items-end md:last:*:text-end
       transition-all"
     >
       {cards.map((card, index) => (
